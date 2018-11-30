@@ -26,6 +26,6 @@ resource "aws_instance" "ubuntu" {
   }
 }
 
-output "consumer ip" {
+output "ip" {
   value = "${aws_instance.ubuntu.public_ip}"
 }
